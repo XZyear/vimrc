@@ -6,6 +6,7 @@ filetype plugin indent on
 syntax on
 
 set background=dark
+color cosme
 
 au WinLeave * set nocursorline
 au WinEnter * set cursorline
@@ -68,6 +69,8 @@ let NERDCompactSexyComs=1
 
 let g:user_emmet_expandabbr_key='<C-j>'
 
+let g:Powerline_colorscheme = 'cosme'
+
 let g:neocomplcache_enable_at_startup=1
 let g:neoComplcache_disableautocomplete=1
 let g:neocomplcache_enable_smart_case=1
@@ -107,6 +110,8 @@ nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
 nnoremap <c-h> <c-w>h
 nnoremap <c-l> <c-w>l
+
+autocmd BufWritePost * call system("ctags -R")
 
 autocmd BufReadPost *
       \ if ! exists("g:leave_my_cursor_position_alone") |
