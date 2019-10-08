@@ -89,7 +89,7 @@ let g:neocomplcache_omni_patterns.erlang = '[a-zA-Z]\|:'
 let g:SuperTabDefaultCompletionType = '<C-X><C-U>'
 let g:SuperTabRetainCompletionType=2
 
-set wildignore+=*/tmp/*,*.so,*.o,*.a,*.obj,*.swp,*.zip,*.pyc,*.pyo,*.class,.DS_Store  " MacOSX/Linux
+set wildignore+=*/tmp/*,*.so,*.o,*.a,*.obj,*.swp,*.zip,*.pyc,*.pyo,*.class,.DS_Store
 let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$'
 
 nnoremap <F2> :set invpaste paste?<CR>
