@@ -1,7 +1,7 @@
 ## Install
-1. Download this.
+1. Download this to `~/.vim/` .
 2. Download Vundle: https://github.com/gmarik/vundle.git to `~/.vim/bundle/vundle` .
-3. Replace the `.vimrc` and Puts the `bundles.vim` in `~/.vim/` .
+3. Replace `~/.vimrc` .
 4. Open vim and run `:BundleInstall` .
 
 ## Tips
