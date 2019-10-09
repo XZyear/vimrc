@@ -95,7 +95,6 @@ nmap <F5> :TagbarToggle<cr>
 nmap <F6> :NERDTreeToggle<cr>
 nmap <F3> :GundoToggle<cr>
 nmap <F4> :IndentGuidesToggle<cr>
-nmap  <D-/> :
 
 nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
