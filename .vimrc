@@ -69,10 +69,6 @@ let NERDTreeWinPos = "right"
 let NERDSpaceDelims=1
 let NERDCompactSexyComs=1
 
-let g:user_emmet_expandabbr_key='<C-j>'
-
-let g:Powerline_colorscheme = 'cosme'
-
 let g:neocomplcache_enable_at_startup=1
 let g:neoComplcache_disableautocomplete=1
 let g:neocomplcache_enable_smart_case=1
@@ -80,16 +76,11 @@ let g:neocomplcache_min_syntax_length = 3
 let g:neocomplcache_lock_buffer_name_pattern = '\*ku\*'
 set completeopt-=preview
 
-imap <C-k> <Plug>(neocomplcache_snippets_force_expand)
-smap <C-k> <Plug>(neocomplcache_snippets_force_expand)
-imap <C-l> <Plug>(neocomplcache_snippets_force_jump)
-smap <C-l> <Plug>(neocomplcache_snippets_force_jump)
-
 autocmd FileType c setlocal omnifunc=ccomplete#Complete
+
 if !exists('g:neocomplcache_omni_patterns')
   let g:neocomplcache_omni_patterns = {}
 endif
-let g:neocomplcache_omni_patterns.erlang = '[a-zA-Z]\|:'
 
 let g:SuperTabDefaultCompletionType = '<C-X><C-U>'
 let g:SuperTabRetainCompletionType=2
@@ -105,8 +96,6 @@ nmap <F6> :NERDTreeToggle<cr>
 nmap <F3> :GundoToggle<cr>
 nmap <F4> :IndentGuidesToggle<cr>
 nmap  <D-/> :
-nnoremap <leader>a :Ack
-nnoremap <leader>v V`]
 
 nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
